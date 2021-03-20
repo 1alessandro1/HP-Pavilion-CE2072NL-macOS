@@ -182,6 +182,7 @@ The following benchmarks were made using Geekbench V5:
 * **Acidanthera** for some Lilu-based kexts
 * **dreamwhite** for helping me to transition to SSDT-only modifications.
 * **Gengik84** for the `GENG` method and for the original DSDT battery patches.
+* **dortania** team for its detailed guides
 * **Corpnewt** for SSDTTime
 * **Mieze** for RealtekRTL8111 LAN driver
 * **RehabMan** for DSDT patching guide
