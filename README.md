@@ -46,9 +46,9 @@ Must have to boot Big Sur:
 * OpenRuntime.efi
 * And nothing else (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method))
 
-For installations with `createinstallmedia`, Big Sur, Catalina etc you must add: 
+For USB creation methods which use `createinstallmedia`, any version of macOS (Big Sur, Catalina etc) may require add: 
 
-* HfsPlus.efi (in order to see the installer)
+* HfsPlus.efi (in order to let OpenCore see the HFS partition created by the tool)
 
 ### Kexts
 
