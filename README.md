@@ -151,8 +151,7 @@ Right now, you should dig around to find the correct settings. All of these are 
 
 This way, if you applied these settings correctly: 
 - You won't need `framebuffer-fbmem` and `framebuffer-stolenmem` properties under `DeviceProperties` for the graphics patch
-- You won't need `AppleXCPMCfgLock` or similar kernel Quirks
-- You won't have any issues loading not signed .efi bootloaders since SecureBoot is now not enabled.
+- You won't need `AppleXCPMCfgLock` or similar kernel quirks
 
 ## Brightness keys 
 
