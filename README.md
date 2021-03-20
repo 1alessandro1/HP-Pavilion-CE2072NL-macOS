@@ -142,9 +142,9 @@ Right now, you should dig around to find the correct settings. All of these are 
            - **DVMT Pre-Allocated** = 64MB 
            - **DVMT Total Gfx Mem** = MAX
            - Leave other settings as default
-           - **VT-d** = **Disabled**
-           - **Above 4G MMIO BIOS assignment** = **Enabled**
-     * PCH-IO Configuration:
+           - **VT-d** = Disabled
+           - **Above 4G MMIO BIOS assignment** = Enabled
+     * PCH-IO Configuration
        - SATA And RST Configuration:
         - SATA Controller(s) = Enabled (do this only if you bought the SATA Cable separately)
         - **NOTE**: Read the [beginning of this page](https://github.com/1alessandro1/1alessandro1-HP-Pavilion-CE2072NL-macOS/blob/main/README.md#important-notes) for the SATA info.
