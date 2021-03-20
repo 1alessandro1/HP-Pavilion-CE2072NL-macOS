@@ -122,7 +122,7 @@ Right now, you should dig around to find the correct settings. All of these are 
     * Connectivity Configuration: 
       - Leave everything default here
     * Power and Performance:
-         - CPU Power Management Control [IMPORTANT]
+         - CPU Power Management Control
               - CPU Lock Configuration (scroll all the way down leave other settings as default):
                 - **CFG Lock** = Disabled
          - GT Power Management Control 
@@ -132,7 +132,9 @@ Right now, you should dig around to find the correct settings. All of these are 
     * Memory Configuration: 
       - Leave everything default here
     * System Agent (SA) Configuration:
-      - Graphics Configuration: [IMPORTANT]
+      - **VT-d** = Disabled
+      - **Above 4G MMIO BIOS assignment** = Enabled
+      - Graphics Configuration:
            - Primary Display = IGFX
            - Select PCIE Card = PEG Eval
            - Internal Graphics = Enabled
@@ -142,8 +144,6 @@ Right now, you should dig around to find the correct settings. All of these are 
            - **DVMT Pre-Allocated** = 64MB 
            - **DVMT Total Gfx Mem** = MAX
            - Leave other settings as default
-       - **VT-d** = Disabled
-       - **Above 4G MMIO BIOS assignment** = Enabled
      * PCH-IO Configuration
        - SATA And RST Configuration:
         - SATA Controller(s) = Enabled (do this only if you bought the SATA Cable separately)
