@@ -160,7 +160,7 @@ There is a simple `SSDT-PS2.aml` which adds the correct `Notify` parameters to h
 
 ## MAT Support is 0 
 
-Hence, the only `Booter -> Quirks` required to boot are `AvoidRuntimeDefrag`, `EnableWriteUnprotector` and `SetupVirtualMap`, maybe one day I'll whitelist the regions, but I think that right now the less patches in use, the better for stability.
+Hence, the only `Booter > Quirks` required to boot are `AvoidRuntimeDefrag`, `EnableWriteUnprotector` and `SetupVirtualMap`, maybe one day I'll whitelist the regions, but I think that right now the less patches in use, the better for stability.
 
 ## Gestures
 
