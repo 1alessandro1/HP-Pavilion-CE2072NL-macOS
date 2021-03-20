@@ -37,7 +37,7 @@ are currently edited with "CHANGEME" in order to force the user to generate its 
 
 I highly suggest to read the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/)
 
-For the ACPI configuration, I have to thank [@dreamwhite](https://github.com/dreamwhite) for his help in the conversion from DSDT patches to pure modular SSDTs hotpatching, and [Gengik84](https://github.com/Gengik84) for the initial patched DSDT, which now is **not in use anymore**.
+For the ACPI configuration, I have to thank [dreamwhite](https://github.com/dreamwhite) for his help in the conversion from DSDT patches to pure modular SSDTs hotpatching, and [Gengik84](https://github.com/Gengik84) for the initial patched DSDT, which now is **not in use anymore**.
 
 ### Drivers
 
