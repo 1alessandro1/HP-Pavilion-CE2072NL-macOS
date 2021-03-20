@@ -142,8 +142,8 @@ Right now, you should dig around to find the correct settings. All of these are 
            - **DVMT Pre-Allocated** = 64MB 
            - **DVMT Total Gfx Mem** = MAX
            - Leave other settings as default
-           - **VT-d** = Disabled
-           - **Above 4G MMIO BIOS assignment** = Enabled
+       - **VT-d** = Disabled
+       - **Above 4G MMIO BIOS assignment** = Enabled
      * PCH-IO Configuration
        - SATA And RST Configuration:
         - SATA Controller(s) = Enabled (do this only if you bought the SATA Cable separately)
