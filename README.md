@@ -150,8 +150,8 @@ Right now, you should dig around to find the correct settings. All of these are 
         - **NOTE**: Read the [beginning of this page](https://github.com/1alessandro1/1alessandro1-HP-Pavilion-CE2072NL-macOS/blob/main/README.md#important-notes) for the SATA info.
 
 This way, if you applied these settings correctly: 
-- You won't need more `framebuffer-fbmem` and `framebuffer-stolenmem` properties under `DeviceProperties` for the graphics patch
-- You won't need AppleXCPMCfgLock or similar kernel Quirks
+- You won't need `framebuffer-fbmem` and `framebuffer-stolenmem` properties under `DeviceProperties` for the graphics patch
+- You won't need `AppleXCPMCfgLock` or similar kernel Quirks
 - You won't have any issues loading not signed .efi bootloaders since SecureBoot is now not enabled.
 
 ## Brightness keys 
