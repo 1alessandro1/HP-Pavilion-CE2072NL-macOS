@@ -105,7 +105,7 @@ Right now, you should dig around to find the correct settings. All of these are 
     * Peripheral Configuration:
       - Serial Port A = Disabled
       - Infrared Port = Disabled
-    * For SATA Configuration, the section is elsewhere. Continue on reading.
+    * For SATA Configuration, the configurable section is under *PCH-IO Configuration*. Continue on reading.
     * USB Configuration:
       - USB BIOS Support = Enabled
       - USB Legacy SMI bit Clean = Disabled
