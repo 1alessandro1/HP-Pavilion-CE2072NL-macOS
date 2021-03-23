@@ -181,7 +181,7 @@ The following benchmarks were made using Geekbench V5:
 * [Apple](https://apple.com) for macOS
 * [Acidanthera](https://github.com/Acidanthera) for some Lilu-based kexts
 * [dreamwhite](https://github.com/dreamwhite) for helping me to transition to SSDT-only modifications.
-* [Gengik84](https://www.macos86.it/profile/1-gengik84/) for the `GENG` method and for the original DSDT battery patches.
+* [Gengik84](https://www.macos86.it/profile/1-gengik84/) for the `GENG` method and for the original custom DSDT
 * [dortania](https://github.com/dortania) team for its detailed guides
 * [Corpnewt](https://github.com/CorpNewt) for SSDTTime
 * [Mieze](https://github.com/Mieze) for RealtekRTL8111 LAN driver
