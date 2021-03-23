@@ -58,8 +58,8 @@ For USB creation methods which use `createinstallmedia`, any version of macOS (B
 * [Lilu](https://github.com/acidanthera/Lilu/releases/latest)
 * [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/latest)
 * [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/latest)
-* [SMCBatteryManager](https://github.com/acidanthera/VirtualSMC/releases/latest) - bundled with **VirtualSMC**
-* [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/latest) - bundled with **VirtualSMC**
+* [SMCBatteryManager](https://github.com/acidanthera/VirtualSMC/releases/latest) - shipped inside **VirtualSMC**
+* [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/latest) - shipped inside **VirtualSMC**
 * [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/latest) 
 * [VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2/releases/latest) - bundled with **VoodooInput**, **VoodooPS2Keyboard.kext** and **VoodooPS2Trackpad.kext** 
 * [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/latest)
@@ -133,7 +133,7 @@ Right now, you should dig around to find the correct settings. All of these are 
       - Leave everything default here
     * System Agent (SA) Configuration:
       - **VT-d** = Disabled
-      - **Above 4G MMIO BIOS assignment** = Enabled
+      - **Above 4G MMIO BIOS assignment** = Disabled
       - Graphics Configuration:
            - Primary Display = IGFX
            - Select PCIE Card = PEG Eval
@@ -178,11 +178,11 @@ The following benchmarks were made using Geekbench V5:
 
 ## Credits
 
-* **Apple** for macOS
-* **Acidanthera** for some Lilu-based kexts
-* **dreamwhite** for helping me to transition to SSDT-only modifications.
-* **Gengik84** for the `GENG` method and for the original DSDT battery patches.
-* **dortania** team for its detailed guides
-* **Corpnewt** for SSDTTime
-* **Mieze** for RealtekRTL8111 LAN driver
-* **RehabMan** for DSDT patching guide
+* [Apple](https://apple.com) for macOS
+* [Acidanthera](https://github.com/Acidanthera) for some Lilu-based kexts
+* [dreamwhite](https://github.com/dreamwhite) for helping me to transition to SSDT-only modifications.
+* [Gengik84](https://www.macos86.it/profile/1-gengik84/) for the `GENG` method and for the original DSDT battery patches.
+* [dortania](https://github.com/dortania) team for its detailed guides
+* [Corpnewt](https://github.com/CorpNewt) for SSDTTime
+* [Mieze](https://github.com/Mieze) for RealtekRTL8111 LAN driver
+* [RehabMan](https://github.com/RehabMan)for DSDT patching guide
