@@ -185,4 +185,4 @@ The following benchmarks were made using Geekbench V5:
 * [dortania](https://github.com/dortania) team for its detailed guides
 * [Corpnewt](https://github.com/CorpNewt) for SSDTTime
 * [Mieze](https://github.com/Mieze) for RealtekRTL8111 LAN driver
-* [RehabMan](https://github.com/RehabMan)for DSDT patching guide
+* [RehabMan](https://github.com/RehabMan) for his DSDT patching guide
