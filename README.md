@@ -85,9 +85,9 @@ Method B.
 Right now, you should dig around to find the correct settings. All of these are present, be patient and explore every possible submenu. This list is accurately organized with subsections (they are on par with the BIOS sections)
 
 * **Security**: 
-  * Intel SGX = Disabled
-    - TPM State = Disabled (set this first)
-    - TPM Device = Hidden (then this one)
+  - Intel SGX = Disabled
+  - TPM State = Disabled (set this first)
+  - TPM Device = Hidden (then this one)
 * **System Configuration**
    * Language = English
    * Virtualization Technology = Enabled 
