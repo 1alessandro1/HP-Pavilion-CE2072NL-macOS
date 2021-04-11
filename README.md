@@ -1,7 +1,7 @@
 # HP Pavilion CE-2072NL - MacBookPro15,2
 
 This repository contains the necessary files and information to successfully boot macOS on this laptop. 
-- Bootloader version: **OpenCore 0.6.7**
+- Bootloader version: **OpenCore 0.6.8**
 - Kexts version: everything up-to-date with the latest version (check the links below)
 - macOS version: [Big Sur 11.2.3](https://www.apple.com/macos/big-sur) - Release channel
 
@@ -60,6 +60,7 @@ For USB creation methods which use `createinstallmedia`, any version of macOS (B
 * [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/latest)
 * [SMCBatteryManager](https://github.com/acidanthera/VirtualSMC/releases/latest) - shipped inside **VirtualSMC**
 * [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/latest) - shipped inside **VirtualSMC**
+* [SMCSuperIO](https://github.com/acidanthera/SuperIO/releases/latest) - shipped inside **VirtualSMC**
 * [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/latest) 
 * [VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2/releases/latest) - bundled with **VoodooInput**, **VoodooPS2Keyboard.kext** and **VoodooPS2Trackpad.kext** 
 * [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/latest)
