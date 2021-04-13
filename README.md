@@ -19,13 +19,11 @@ This repository contains the necessary files and information to successfully boo
 
 ## Important notes
 
-- In the config.plist, section `PlatformInfo > Generic`, the following fields: 
+- In the config.plist, section `PlatformInfo > Generic`, the following fields are currently edited with "CHANGEME" in order to force the user to generate his own serials. Refer to this guide to [know how](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo). 
   - `MLB`
   - `ROM`
   - `SystemSerialNumber` 
   - `SystemUUID`
-
-are currently edited with "CHANGEME" in order to force the user to generate its own serials. Refer to this guide to [know how](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo).
 
 - For those who have set up a multiboot environment with multiple drives as I did please note that BigSur dropped support for the RAID only controller present in this laptop, vendor-id and device-id `8086:282A`, hence `CtlnaAHCIPort.kext` is required to boot Big Sur from the internal SATA drive. 
 
