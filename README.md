@@ -54,6 +54,7 @@ For USB creation methods which use `createinstallmedia`, any version of macOS (B
 
 * [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
 * [AppleALC](https://github.com/acidanthera/AppleALC/releases/latest)
+* [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/latest)
 * [CtlnaAHCIPort.kext](https://github.com/dortania/OpenCore-Install-Guide/blob/master/extra-files/CtlnaAHCIPort.kext.zip) - for those of you who use the SATA Cable
 * [Lilu](https://github.com/acidanthera/Lilu/releases/latest)
 * [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/latest)
@@ -184,6 +185,6 @@ The following benchmarks were made using Geekbench V5:
 * [dreamwhite](https://github.com/dreamwhite) for helping me to transition to SSDT-only modifications.
 * [Gengik84](https://www.macos86.it/profile/1-gengik84/) for the `GENG` method and for the original custom DSDT
 * [dortania](https://github.com/dortania) team for its detailed guides
-* [Corpnewt](https://github.com/CorpNewt) for SSDTTime
+* [Corpnewt](https://github.com/CorpNewt) for SSDTTime and [fewtarius](https://github.com/fewtarius) for CPUFriend fork
 * [Mieze](https://github.com/Mieze) for RealtekRTL8111 LAN driver
 * [RehabMan](https://github.com/RehabMan) for his DSDT patching guide
