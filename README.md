@@ -53,7 +53,7 @@ For USB creation methods which use `createinstallmedia`, any version of macOS (B
 * [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
 * [AppleALC](https://github.com/acidanthera/AppleALC/releases/latest)
 * [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/latest)
-* [CtlnaAHCIPort.kext](https://github.com/dortania/OpenCore-Install-Guide/blob/master/extra-files/CtlnaAHCIPort.kext.zip) - for those of you who use the SATA Cable
+* [CtlnaAHCIPort.kext](https://github.com/dortania/OpenCore-Install-Guide/blob/master/extra-files/CtlnaAHCIPort.kext.zip) - for those of you who use the SATA Cable or mSATA SSD
 * [Lilu](https://github.com/acidanthera/Lilu/releases/latest)
 * [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/latest)
 * [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/latest)
