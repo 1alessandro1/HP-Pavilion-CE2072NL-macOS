@@ -13,6 +13,7 @@ This repository contains the necessary files and information to successfully boo
 | **iGPU**       | `Intel UHD Graphics 620 - Whiskey Lake`   |
 | **Storage**    | `Samsung 840 EVO 256GB + Intel 660p 512GB`|
 | **Audio**      | `Realtek ALC295`                          |
+| **Ethernet**   | `Realtek RTL8111/8168`                    |
 | **WiFi Card**  | `BCM94360NG - device-id 43A0`             |
 | **OS**         | `macOS Big Sur 11.2.3 (20D91)`            |
 | **BIOS**       | `F23`                                     |
