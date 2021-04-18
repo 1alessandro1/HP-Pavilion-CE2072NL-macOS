@@ -17,7 +17,7 @@ This repository contains the necessary files and information to successfully boo
 | **Audio**      | `Realtek ALC295`                          |
 | **Ethernet**   | `Realtek RTL8111/8168`                    |
 | **WiFi Card**  | `BCM94360NG - device-id 43A0`             |
-| **OS**         | `macOS Big Sur 11.2.3 (20D91)`            |
+| **OS**         | `macOS Big Sur 11.3 (20E62)`              |
 | **BIOS**       | `F23`                                     |
 
 ## Important notes
