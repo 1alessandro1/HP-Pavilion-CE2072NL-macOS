@@ -6,6 +6,9 @@ All these tests are conducted in the same way, these are the steps:
 - Open *Intel Power Gadget*, *Macs Fan Control* and *iStatMenus*
 - Open a Terminal and start the `ffmpeg -c:v libx265` encoding benchmark
 - The CPU goes from low RPM to high RPM since `ffmpeg` brings the CPU to 70-75 C without the power adapter and to 90 C with the power adapter connected, since this unlocks the TDP to go higher than 15W.
+- Open macsfancontrol, check all the 5 values reported, as long as the values keep boucing around when the FAN is OFF (from what you hear) then your offset is wrong.
+- Values from MacsFancontrol are going to jump around and are incorrect, but the only value which stays correct is when fan stops, going to zero. You know you found the correct offset when macsfancontrol reports `0 rpm` immediately once you hear that your FAN has stopped, (you don't hear it spinning anymore). 
+
 
 ### Used boot arguments:
 - `-v` 
