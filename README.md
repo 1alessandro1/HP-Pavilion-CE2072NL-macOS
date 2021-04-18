@@ -5,6 +5,8 @@ This repository contains the necessary files and information to successfully boo
 - Kexts version: everything up-to-date with the latest version (check the links below)
 - macOS version: [Big Sur 11.2.3](https://www.apple.com/macos/big-sur) - Release channel
 
+![image](https://github.com/1alessandro1/HP-Pavilion-CE2072NL-macOS/blob/main/Misc/Screenshots/terminal.png)
+
 ## Specs
 
 | Component      | Brand                                     |
