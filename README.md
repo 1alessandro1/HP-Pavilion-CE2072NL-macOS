@@ -42,12 +42,12 @@ For the ACPI configuration, I have to thank [dreamwhite](https://github.com/drea
 
 Must have to boot Big Sur:
 
-* OpenRuntime.efi
+* OpenRuntime.efi (bundled in OpenCore package)
 * And nothing else (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method))
 
 For USB creation methods which use `createinstallmedia`, any version of macOS (Big Sur, Catalina etc) may require add: 
 
-* HfsPlus.efi (in order to let OpenCore see the HFS partition created by the tool)
+* [HfsPlus.efi](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi) (in order to let OpenCore see the HFS partition created by the tool)
 
 ### Kexts
 
@@ -180,7 +180,7 @@ The following benchmarks were made using Geekbench V5:
 ## Credits
 
 * [Apple](https://apple.com) for macOS
-* [Acidanthera](https://github.com/Acidanthera) for some Lilu-based kexts
+* [Acidanthera](https://github.com/Acidanthera) for OpenCore and Lilu-based kexts 
 * [dreamwhite](https://github.com/dreamwhite) for helping me to transition to SSDT-only modifications.
 * [Gengik84](https://www.macos86.it/profile/1-gengik84/) for the `GENG` method and for the original custom DSDT
 * [dortania](https://github.com/dortania) team for its detailed guides
