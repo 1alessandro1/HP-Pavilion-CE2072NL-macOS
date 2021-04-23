@@ -8,6 +8,14 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>Disable ACEL - HPQ0007</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-ACEL-DISABLE.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Force enable RTC</string>
 				<key>Enabled</key>
 				<true/>
@@ -29,14 +37,6 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-EC-USBX.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Conflicting IRQs from Legacy Devices</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-HPET.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -80,19 +80,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SMBus compatibility table</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SBUS-MCHC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>USB Mapping Table with GENG Method</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-USB.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Add missing XSPI device</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-XSPI.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -105,13 +105,13 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>HPET _CRS to XCRS (for SSDT-HPET)</string>
+				<string>Prohibits ACEL device loading on macOS</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>JV9DUlM=</data>
+				<data>FEoEX1NUQQA=</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -119,67 +119,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>JVhDUlM=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>TIMR IRQ 0 Patch (for SSDT-HPET)</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>IgEAeQA=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>IgAAeQA=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>RTC IRQ 8 Patch (for SSDT-HPET)</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>IgABeQA=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>IgAAeQA=</data>
+				<data>FEoEWFNUQQA=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -496,19 +436,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
-			<dict>
-				<key>AAPL,current-available</key>
-				<data>NAgAAA==</data>
-				<key>AAPL,current-extra</key>
-				<data>mAgAAA==</data>
-				<key>AAPL,current-extra-in-sleep</key>
-				<data>QAYAAA==</data>
-				<key>AAPL,device-internal</key>
-				<data>AgAAAA==</data>
-				<key>AAPL,max-port-current-in-sleep</key>
-				<data>NAgAAA==</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
 			<dict>
 				<key>compatible</key>
@@ -516,12 +443,12 @@
 				<key>device-id</key>
 				<data>o1IAAA==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1d,0x0)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>brcmfx-country</key>
 				<string>#a</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
 			<dict>
 				<key>ec-device</key>
 				<string>generic</string>
@@ -534,7 +461,7 @@
 				<key>fan0-size</key>
 				<data>AgAAAA==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
 				<key>layout-id</key>
 				<data>DQAAAA==</data>
@@ -551,12 +478,10 @@
 				<data>AQEJAAAIAADHAQAA</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-alldata</key>
-				<data>AgAKAAAEAADHAQAA</data>
-				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-portcount</key>
+				<data>AgAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
