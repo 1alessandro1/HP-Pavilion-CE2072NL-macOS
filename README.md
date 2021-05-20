@@ -45,11 +45,7 @@ For the ACPI configuration, I have to thank [dreamwhite](https://github.com/drea
 Must have to boot Big Sur:
 
 * OpenRuntime.efi (bundled in OpenCore package)
-* And nothing else (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method))
-
-For USB creation methods which use `createinstallmedia`, any version of macOS (Big Sur, Catalina etc) may require add: 
-
-* [HfsPlus.efi](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi) (in order to let OpenCore see the HFS partition created by the tool)
+* HfsPlus.efi (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method) or with `createinstallmedia`) and can be found either in the `OC/Drivers` folder of this repository or in [acidanthera/OcBinaryData]((https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi))
 
 ### Kexts
 
