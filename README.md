@@ -3,7 +3,7 @@
 This repository contains the necessary files and information to successfully boot macOS on this laptop. 
 - Bootloader version: **OpenCore 0.6.8**
 - Kexts version: everything up-to-date with the latest version (check the links below)
-- macOS version: [Big Sur 11.2.3](https://www.apple.com/macos/big-sur) - Release channel
+- macOS version: [Big Sur 11.3.1](https://www.apple.com/macos/big-sur) - Release channel
 
 ![image](https://github.com/1alessandro1/HP-Pavilion-CE2072NL-macOS/blob/main/Misc/Screenshots/terminal.png)
 
