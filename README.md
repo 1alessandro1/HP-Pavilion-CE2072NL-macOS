@@ -14,7 +14,7 @@ This repository contains the necessary files and information to successfully boo
 | **CPU**        | `Intel Core i5-8265U @ 1.8 GHz`           |
 | **iGPU**       | `Intel UHD Graphics 620 - Whiskey Lake`   |
 | **Storage**    | `Samsung 840 EVO 256GB + Intel 660p 512GB`|
-| **Audio**      | `Realtek ALC295`                          |
+| **Audio**      | `Realtek ALC295 - layout 13`              |
 | **Ethernet**   | `Realtek RTL8111/8168`                    |
 | **WiFi Card**  | `BCM94360NG - device-id 43A0`             |
 | **OS**         | `macOS Big Sur 11.3 (20E62)`              |
