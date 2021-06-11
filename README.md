@@ -1,9 +1,9 @@
 # HP Pavilion CE-2072NL - MacBookPro15,2
 
 This repository contains the necessary files and information to successfully boot macOS on this laptop. 
-- Bootloader version: **OpenCore 0.6.8**
+- Bootloader version: **OpenCore 0.7.0**
 - Kexts version: everything up-to-date with the latest version (check the links below)
-- macOS version: [Big Sur 11.3.1](https://www.apple.com/macos/big-sur) - Release channel
+- macOS version: [Big Sur 11.4](https://www.apple.com/macos/big-sur) - Release channel
 
 ![image](https://github.com/1alessandro1/HP-Pavilion-CE2072NL-macOS/blob/main/Misc/Screenshots/terminal.png)
 
@@ -15,9 +15,9 @@ This repository contains the necessary files and information to successfully boo
 | **iGPU**       | `Intel UHD Graphics 620 - Whiskey Lake`   |
 | **Storage**    | `Samsung 840 EVO 256GB + Intel 660p 512GB`|
 | **Audio**      | `Realtek ALC295 - layout 13`              |
-| **Ethernet**   | `Realtek RTL8111/8168`                    |
-| **WiFi Card**  | `BCM94360NG - device-id 43A0`             |
-| **OS**         | `macOS Big Sur 11.3 (20E62)`              |
+| **Ethernet**   | `Realtek RTL8168H/8111H - 10ec:8168`      |
+| **WiFi Card**  | `BCM94360NG - 14e4:43a0`                  |
+| **OS**         | `macOS Big Sur 11.4 (20F71)`              |
 | **BIOS**       | `F23`                                     |
 
 ## Important notes
@@ -30,7 +30,7 @@ This repository contains the necessary files and information to successfully boo
 
 - For those who have set up a multiboot environment with multiple drives as I did please note that BigSur dropped support for the RAID only controller present in this laptop, vendor-id and device-id `8086:282A`, hence `CtlnaAHCIPort.kext` is required to boot Big Sur from the internal SATA drive. 
 
-- If you are planning to use the built-in NVMe, the stock Intel 660p is perfectly fine with macOS.
+- If you are planning to use the built-in NVMe, the stock Intel 660p (`8086:f1a8`) is perfectly fine with macOS.
 
 - The HDMI port is fully working, in the `DeviceProperties` section you can find all the correct BusIDs. I've even tested a connection with a 4K monitor, the [LG27UD59](https://www.amazon.it/LG-Monitor-Desktop-FreeSync-Multitasking/dp/B0764DMTPN), and it works perfectly (maximum external resolution with this iGPU).
 
@@ -47,12 +47,18 @@ Must have to boot Big Sur:
 * OpenRuntime.efi (bundled in OpenCore package)
 * HfsPlus.efi (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method) or with `createinstallmedia`) and can be found either in the `OC/Drivers` folder of this repository or in [acidanthera/OcBinaryData](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)
 
+Additional drivers for cosmetic stuff:
+
+* AudioDxe.efi for Boot Chime support in UEFI environment
+* OpenCanopy.efi (bundled in OpenCore package) for Mac-like GUI support in picker
+
 ### Kexts
 
 * [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
 * [AppleALC](https://github.com/acidanthera/AppleALC/releases/latest)
 * [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/latest)
 * [CtlnaAHCIPort.kext](https://github.com/dortania/OpenCore-Install-Guide/blob/master/extra-files/CtlnaAHCIPort.kext.zip) - for those of you who use the SATA Cable or M2 SATA SSD
+* [HoRNDIS](https://github.com/jwise/HoRNDIS/releases/latest) - for those of you who like to have USB tethering support
 * [Lilu](https://github.com/acidanthera/Lilu/releases/latest)
 * [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/latest)
 * [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/latest)
@@ -182,6 +188,6 @@ The following benchmarks were made using Geekbench V5:
 * [dreamwhite](https://github.com/dreamwhite) for helping me to transition to SSDT-only modifications.
 * [Gengik84](https://www.macos86.it/profile/1-gengik84/) for the `GENG` method and for the original custom DSDT
 * [dortania](https://github.com/dortania) team for its detailed guides
-* [Corpnewt](https://github.com/CorpNewt) for SSDTTime and [fewtarius](https://github.com/fewtarius) for CPUFriend fork
+* [Corpnewt](https://github.com/CorpNewt) for SSDTTime and [fewtarius](https://github.com/fewtarius) for CPUFriend fork (now merged into Corp's repo)
 * [Mieze](https://github.com/Mieze) for RealtekRTL8111 LAN driver
 * [RehabMan](https://github.com/RehabMan) for his DSDT patching guide
