@@ -34,6 +34,8 @@ This repository contains the necessary files and information to successfully boo
 
 - The HDMI port is fully working, in the `DeviceProperties` section you can find all the correct BusIDs. I've even tested a connection with a 4K monitor, the [LG27UD59](https://www.amazon.it/LG-Monitor-Desktop-FreeSync-Multitasking/dp/B0764DMTPN), and it works perfectly (maximum external resolution with this iGPU).
 
+- OpenCanopy is fully configured with the correct theme from acidanthera, (GoldenGate) but to enable this you should edit the `config.plist` and change `PickerMode` from `Builtin` to `External`
+
 ## How to get this laptop to boot macOS flawlessly
 
 I highly suggest to read the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/)
