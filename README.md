@@ -1,9 +1,9 @@
 # HP Pavilion CE-2072NL - MacBookPro15,2
 
 This repository contains the necessary files and information to successfully boot macOS on this laptop. 
-- Bootloader version: **OpenCore 0.7.0**
+- Bootloader version: **OpenCore 0.7.1**
 - Kexts version: everything up-to-date with the latest version (check the links below)
-- macOS version: [Big Sur 11.4](https://www.apple.com/macos/big-sur) - Release channel
+- macOS version: [Big Sur 11.5](https://www.apple.com/macos/big-sur) - Release channel
 
 ![image](https://github.com/1alessandro1/HP-Pavilion-CE2072NL-macOS/blob/main/Misc/Screenshots/terminal.png)
 
@@ -17,7 +17,7 @@ This repository contains the necessary files and information to successfully boo
 | **Audio**      | `Realtek ALC295 - layout 13`              |
 | **Ethernet**   | `Realtek RTL8168H/8111H - 10ec:8168`      |
 | **WiFi Card**  | `BCM94360NG - 14e4:43a0`                  |
-| **OS**         | `macOS Big Sur 11.4 (20F71)`              |
+| **OS**         | `macOS Big Sur 11.5 (20G71)`              |
 | **BIOS**       | `F23`                                     |
 
 ## Important notes
