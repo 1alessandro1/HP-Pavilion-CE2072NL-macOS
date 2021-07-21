@@ -135,6 +135,36 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
+				<string>Allow sleeping while USB devices are connected</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1BSVw==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WFBSVw==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
 				<string>UPBS to XPBS (Battery Patch)</string>
 				<key>Count</key>
 				<integer>0</integer>
@@ -381,6 +411,8 @@
 			<key>ResetHwSig</key>
 			<false/>
 			<key>ResetLogoStatus</key>
+			<false/>
+			<key>SyncTableIds</key>
 			<false/>
 		</dict>
 	</dict>
@@ -659,7 +691,7 @@
 				<key>BundlePath</key>
 				<string>ECEnabler.kext</string>
 				<key>Comment</key>
-				<string>Lilu Plugin - Embedded Controller for battery status (currently done though ACPI)</string>
+				<string>Lilu Plugin - Embedded Controller for battery status</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -869,15 +901,19 @@
 			<false/>
 			<key>PowerTimeoutKernelPanic</key>
 			<false/>
+			<key>ProvideCurrentCpuInfo</key>
+			<false/>
 			<key>SetApfsTrimTimeout</key>
 			<integer>4294967295</integer>
 			<key>ThirdPartyDrives</key>
-			<true/>
+			<false/>
 			<key>XhciPortLimit</key>
 			<false/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<true/>
 			<key>KernelArch</key>
@@ -943,8 +979,10 @@
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
-			<false/>
+			<true/>
 			<key>AllowSetDefault</key>
+			<false/>
+			<key>AllowToggleSip</key>
 			<false/>
 			<key>ApECID</key>
 			<integer>0</integer>
@@ -965,7 +1003,7 @@
 			<key>PasswordSalt</key>
 			<data></data>
 			<key>ScanPolicy</key>
-			<integer>2097411</integer>
+			<integer>0</integer>
 			<key>SecureBootModel</key>
 			<string>j185</string>
 			<key>Vault</key>
@@ -993,6 +1031,8 @@
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<string>en_GB:2</string>
+				<key>SystemAudioVolume</key>
+				<data>Rg==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1026,7 +1066,7 @@
 		<false/>
 		<key>Generic</key>
 		<dict>
-			<key>AdviseWindows</key>
+			<key>AdviseFeatures</key>
 			<false/>
 			<key>MaxBIOSVersion</key>
 			<false/>
@@ -1080,7 +1120,7 @@
 			<key>AppleEvent</key>
 			<string>Builtin</string>
 			<key>CustomDelays</key>
-			<string>Auto</string>
+			<false/>
 			<key>KeyInitialDelay</key>
 			<integer>0</integer>
 			<key>KeySubsequentDelay</key>
@@ -1095,26 +1135,29 @@
 			<key>AudioCodec</key>
 			<integer>0</integer>
 			<key>AudioDevice</key>
-			<string>PciRoot(0x0)/Pci(0x1f,0x3)</string>
+			<string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
 			<key>AudioOut</key>
 			<integer>0</integer>
 			<key>AudioSupport</key>
-			<false/>
+			<true/>
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
-			<string>Auto</string>
+			<string>Enabled</string>
 			<key>ResetTrafficClass</key>
 			<false/>
 			<key>SetupDelay</key>
 			<integer>0</integer>
 			<key>VolumeAmplifier</key>
-			<integer>0</integer>
+			<integer>143</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
 		<key>Drivers</key>
 		<array>
+			<string>AudioDxe.efi</string>
+			<string>HfsPlus.efi</string>
+			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
 		</array>
 		<key>Input</key>
@@ -1147,7 +1190,7 @@
 			<key>ForceResolution</key>
 			<false/>
 			<key>GopPassThrough</key>
-			<false/>
+			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
@@ -1172,6 +1215,8 @@
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleDebugLog</key>
+			<false/>
+			<key>AppleEg2Info</key>
 			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
@@ -1208,11 +1253,17 @@
 			<false/>
 			<key>DisableSecurityPolicy</key>
 			<false/>
+			<key>EnableVectorAcceleration</key>
+			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ForgeUefiSupport</key>
+			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
+			<false/>
+			<key>ReloadOptionRoms</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
