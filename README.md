@@ -22,6 +22,8 @@ This repository contains the necessary files and information to successfully boo
 
 ## Important notes
 
+- **Update 2021/11/28**: I asked for a repair of a keyboard key, and this amazing laptop was lost by Amazon in transit. This machine helped me a lot and I learned so much by using it. It will not be forgotten, but I cannot update this repository anymore since I'm unable to test the new commits
+
 - In the config.plist, section `PlatformInfo > Generic`, the following fields are currently edited with "CHANGEME" in order to force the user to generate his own serials. Refer to this guide to [know how](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo). 
   - `MLB`
   - `ROM`
